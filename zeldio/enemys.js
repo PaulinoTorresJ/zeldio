@@ -1,12 +1,4 @@
 
-
-// eh7= [,H7]
-/* var eH7 = [
-    Octorock,
-];
- */
-/* var enemyCreator = new H7[0]; */
-
 var eneyMap = [
     //A  B   C   D   E   F   G   H   I   J   K   L   M   N   O   P
     [ee, ee, ee, ee, ee, ee, ee, ee, ee, ee, ee, ee, ee, ee, ee, ee], // 0
