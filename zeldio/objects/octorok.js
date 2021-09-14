@@ -44,35 +44,9 @@ class Octorok extends Objeto {
         dir.push(i);
       }
     }
-    // Cuantos bloques tengo disponibles
 
     // Decidir a donde moverse
     this.dirRandom = dir[int(random(0, dir.length))];
-/*     
-
-    if (this.dirRandom === 0) {
-      while(!this.chocando(this.x + bll, this.y, bloques)) {
-        bll += 32;
-        bb++;
-      }
-    } else if (this.dirRandom === 1) {
-
-      while(!this.chocando(this.x + bll, this.y, bloques)) {
-          bll += 32;
-          bb++;
-        }
-    } else if (dir == 2) {
-      while(!this.chocando(this.x + bll, this.y, bloques)) {
-        bll += 32;
-        bb++;
-      }
-    } else if (dir == 3) {
-      while(!this.chocando(this.x + bll, this.y, bloques)) {
-        bll += 32;
-        bb++;
-      }
-    }
-    console.log(bb); */
   }
   moverse() {
 
@@ -101,23 +75,6 @@ class Octorok extends Objeto {
       if (this.chocando(this.x - this.v, this.y, bloques) || this.x <= 0) {
         this.decidir();
       }
-  }
-  }
-  dibujar2() {
-    //scale(-1,1);
-    //scale(1, -1, 1);
-
-    //translate(32, -32);
-    //rotate(10);
-    imageMode(CENTER);
-    //rotate(10);
-    fill('red');
-    rect(this.x, this.y, 32);
-    imageMode(CORNER);
-    //image(this.img, this.x + 16, this.y + 16);
-    //imageMode(CORNER);
-    //sscale(1);
-    //rotate(0);
-    //scale(1,1);
+	}
   }
 }
